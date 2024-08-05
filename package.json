@@ -4,20 +4,23 @@
   "description": "## Learning Objectives",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint",
+    "check-lint": "lint [0-9]*.js",
+    "dev": "npx babel-node",
     "test": "jest",
-    "lint": "eslint ."
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.25.2",
-    "@babel/preset-env": "^7.25.3",
-    "@eslint/js": "^9.8.0",
-    "babel-jest": "^29.7.0",
-    "eslint": "^9.8.0",
-    "eslint-plugin-react": "^7.35.0",
-    "globals": "^15.9.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.6.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^28.7.0",
     "jest": "^29.7.0"
   },
   "dependencies": {
